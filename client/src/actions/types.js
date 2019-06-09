@@ -1,0 +1,5 @@
+export const SET_CURRENT_USER="SET_CURRENT_USER";
+export const GET_USERS="GET_USERS";
+export const GET_MESSAGES="GET_MESSAGES";
+export const SEND_MESSAGE="SEND_MESSAGE";
+export const CLEAR_CHAT="CLEAR_CHAT";
