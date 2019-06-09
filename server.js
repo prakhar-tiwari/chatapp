@@ -30,7 +30,7 @@ if(process.env.NODE_ENV == 'production'){
     })
 }
 
-mongoose.connect("mongodb+srv://prakhar:admin@cluster0-qejpw.mongodb.net/chatapplication", {
+mongoose.connect("mongodb url", {
     useNewUrlParser: true
 })
 .then(result=>{
