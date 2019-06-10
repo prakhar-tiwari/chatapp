@@ -80,8 +80,9 @@ const Chat = (props) => {
 
   const socket = io("http://localhost:5000");
   
-  socket.on("chat message", result => {
-    setMessages(messages.concat(result));
+  socket.once("chat message", result => {
+    var updatedMessage=[...messages];
+    setMessages(updatedMessage.concat(result));
   })
 
   useEffect(() => {
